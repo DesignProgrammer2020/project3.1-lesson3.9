@@ -2,7 +2,7 @@ let array = []; //empty array for mouseX and mouseY
 let backgroundColor = 255;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   background(backgroundColor);
   strokeWeight(5);
   noFill();
