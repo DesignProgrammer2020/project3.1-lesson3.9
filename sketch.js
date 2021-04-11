@@ -12,13 +12,16 @@ function setup() {
 function draw() {
   if (mouseIsPressed) {
     //backgroundColor -= 5;
-    background(20, 120, 255);
-    array.push([mouseX, mouseY]); //to push mouseX and mouseY into array
-    beginShape(); //draw image in curvilinear lines
-    for (let i = 0; i < array.length; i++) {
-      curveVertex(array[i][0], array[i][1]);
-    }
-    endShape();
+    //background(20, 120, 255);
+    //line(width-mouseX, height-mouseY, width-pmouseX, height-pmouseY);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    //line(mouseX, mouseY);
+    //array.push([mouseX, mouseY]); //to push mouseX and mouseY into array
+    // beginShape(); //draw image in curvilinear lines
+    // for (let i = 0; i < array.length; i++) {
+    //   curveVertex(array[i][0], array[i][1]);
+    // }
+    // endShape();
   }
 }
 
@@ -39,6 +42,6 @@ function keyTyped() {
 
 function mousePressed() {
   array = [];
-  background(0, 40, 255)
+  //background(0, 40, 255)
 
 }
